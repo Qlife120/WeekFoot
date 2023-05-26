@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<body>
+    <h1>Football News</h1>
+    {% if articles %}
+        <ul>
+        {% for article in articles %}
+            {% if article.urlToImage %}
+                <li>
+                    <h3>{{ article.title }}</h3>
+                    <p>{{ article.description }}</p>
+                    <img src="{{ article.urlToImage }}" alt="{{ article.title }}">
+                </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No news articles found.</p>
+    {% endif %}
+</body>
+{% endblock content %}

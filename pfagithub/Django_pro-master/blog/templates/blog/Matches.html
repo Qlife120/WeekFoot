@@ -1,0 +1,63 @@
+{%extends "blog/base.html"%}
+{%block content%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Score Football Website</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Score Football Website</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Home Team</th>
+                <th>Away Team</th>
+                <th>Score</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="../static/real-madrid.png" width="24">Real Madrid</td>
+                <td><img src="../static/barca.png" width="24">Barcelona</td>
+                <td>2 - 1</td>
+                <td>45+3'</td>
+            </tr>
+            <tr>
+                <td><img src="../static/atleti.png" width="24">Atletico Madrid</td>
+                <td><img src="../static/barca.png" width="24">Sevilla</td>
+                <td>3 - 2</td>
+                <td>60'</td>
+            </tr>
+            <tr>
+                <td><img src="../static/val.png" width="24">Valencia</td>
+                <td><img src="../static/bilbao.png" width="24">Athletic Bilbao</td>
+                <td>2 - 0</td>
+                <td>30'</td>
+            </tr>
+            <tr>
+                <td><img src="../static/sociedad.png" width="24">Real Sociedad</td>
+                <td><img src="../static/betis.png" width="24">Real Betis</td>
+                <td>1 - 1</td>
+                <td>82'</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+{% endblock content %}
